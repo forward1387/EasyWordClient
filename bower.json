@@ -10,6 +10,7 @@
     "angular-route": "latest",
     "angular-loader": "latest",
     "angular-mocks": "latest",
-    "html5-boilerplate": "latest"
+    "html5-boilerplate": "latest",
+    "bootstrap": "latest"
   }
 }
