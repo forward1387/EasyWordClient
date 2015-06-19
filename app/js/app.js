@@ -1,13 +1,10 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-var app = angular.module('EasyWordApp', [
-  'ngRoute',
-  'EasyWordApp.Words'
-]);
-
-
-app.config(['$routeProvider', function($routeProvider) {
+angular.module('EasyWordApp', [
+  'ngRoute'
+]).config(['g', function($routeProvider) {
   $routeProvider.
-      otherwise({redirectTo: '/'});
+      when('/words', {}).
+      otherwise({redirectTo: '/home'});
 }]);

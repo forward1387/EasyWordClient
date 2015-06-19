@@ -9,6 +9,6 @@ angular.module('EasyWordApp.Words', ['ngRoute'])
         });
     }])
 
-    .controller('WordsCtrl', [function() {
-
+    .controller('WordsCtrl', [function($scope) {
+        $scope.hello = "Hello Worlds";
     }]);
