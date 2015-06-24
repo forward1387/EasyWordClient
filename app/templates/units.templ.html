@@ -1,3 +1,17 @@
 <div ng-controller="UnitsController">
     <h4>You are on the {{ title }} page!!!!!</h4>
+
+    <ul>
+        <li ng-repeat="unit in units">{{ unit.title }}</li>
+    </ul>
+
+    <form novalidate class="simple-form">
+        Title: <input type="text" ng-model="newUnit.title" /><br />
+        Description: <input type="text" ng-model="newUnit.description" /><br />
+        <input type="button" ng-click="reset()" value="Reset" />
+        <input type="submit" ng-click="addUnit(newUnit)" value="Add Unit" />
+    </form>
+
+    <pre>Units = {{units | json}}</pre>
+    <pre>newUnit = {{newUnit | json}}</pre>
 </div>
