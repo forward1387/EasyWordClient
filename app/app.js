@@ -16,8 +16,12 @@ angular.module('EasyWordApp').config(['$routeProvider', function($routeProvider)
         controller: 'WordsController'
       }).
       when('/units', {
-        templateUrl: 'templates/units.templ.html',
+        templateUrl: 'templates/units/units.templ.html',
         controller: 'UnitsController'
+      }).
+      when('/addunit', {
+          templateUrl: 'templates/units/addunit.templ.html',
+          controller: 'AddUnitController'
       }).
       when('/login', {
         templateUrl: 'templates/login.templ.html',
